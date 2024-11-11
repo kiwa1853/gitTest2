@@ -14,14 +14,14 @@ public class TitleActivity extends AppCompatActivity {
         setContentView(R.layout.title); // title.xml 레이아웃 설정
 
         // 버튼을 찾아서 참조를 가져옴
-        Button imageButton = (Button) findViewById(R.id.button2);
+        Button imageButton = findViewById(R.id.button2);
 
         // 버튼 클릭 리스너 설정
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // MainActivity로 이동하기 위한 Intent 생성
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(TitleActivity.this, MainActivity.class);
                 startActivity(intent); // 새로운 Activity 시작
             }
         });

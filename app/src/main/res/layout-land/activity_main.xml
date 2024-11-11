@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:ignore="MissingDefaultResource">
 
-    <!-- Left Layout (50% of the screen width) -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,6 +14,7 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!--왼쪽 절반의 레이아웃-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/leftLayout"
         android:layout_width="0dp"
@@ -23,9 +23,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent="0.5">
 
-        <!-- ImageView covering the left half -->
 
-        <!-- Icon in the top-left corner -->
+        <!---왼쪽 큰 사진-->
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
@@ -36,8 +35,9 @@
             app:layout_constraintTop_toTopOf="parent"
             android:src="@drawable/group_4" />
 
-        <ImageView
-            android:id="@+id/imageView3"
+        <!--나가기 이미지-->
+         <ImageView
+            android:id="@+id/myImageView"
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_marginStart="30dp"
@@ -48,7 +48,7 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Right Layout (50% of the screen width) -->
+    <!-- 오른쪽 50% -->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -60,7 +60,7 @@
         app:layout_constraintWidth_percent="0.5"
         >
 
-        <!-- Title Text -->
+        <!-- 날짜 텍스트 -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
             android:textColor="@color/black"
             android:textSize="24sp" />
 
-        <!-- Details Section -->
+        <!--  오른쪽 요소들 아래로 배치 하는 레이아웃 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -83,7 +83,7 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <!-- Iron Temperature -->
+            <!--가로 정렬/위 아래 회색 선-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
                 android:background="@drawable/text_text"
                 android:orientation="horizontal">
 
-
+                <!--Recommended iron temp 텍스트-->
                 <TextView
                     android:id="@+id/textView5"
                     android:layout_width="0dp"
@@ -105,6 +105,7 @@
                     android:textColor="@color/black"
                     android:textSize="24sp" />
 
+                <!--온도 c-->
                 <TextView
                     android:id="@+id/textView7"
                     android:layout_width="wrap_content"
@@ -116,7 +117,7 @@
                     android:textSize="35sp" />
             </LinearLayout>
 
-            <!-- Damaged Hair -->
+            <!--가로 정렬/위 아래 회색 선-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -126,7 +127,8 @@
                 android:background="@drawable/text_text"
                 android:orientation="horizontal">
 
-                <TextView
+                 <!-- Damaged Hair 텍스트 -->
+                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -138,6 +140,7 @@
                     android:textColor="@color/black"
                     android:textSize="24sp" />
 
+                <!--% 텍스트-->
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
@@ -149,7 +152,7 @@
                     android:textSize="35sp"/>
             </LinearLayout>
 
-            <!-- Severely Damaged Hair -->
+            <!--가로 정렬/위 아래 회색 선-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -159,6 +162,7 @@
                 android:background="@drawable/text_text"
                 android:orientation="horizontal">
 
+                <!--극 손상모 텍스트-->
                 <TextView
                     android:id="@+id/textView9"
                     android:layout_width="0dp"
@@ -171,6 +175,7 @@
                     android:textColor="@color/black"
                     android:textSize="24sp" />
 
+                <!--% 텍스트-->
                 <TextView
                     android:id="@+id/textView10"
                     android:layout_width="wrap_content"
@@ -182,7 +187,7 @@
                     android:textSize="35sp" />
             </LinearLayout>
 
-            <!-- Damaged Hair (Repeated) -->
+            <!--가로 정렬/위 아래 회색 선-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -192,6 +197,7 @@
                 android:background="@drawable/text_text"
                 android:orientation="horizontal">
 
+                <!--손상모 텍스트-->
                 <TextView
                     android:id="@+id/textView11"
                     android:layout_width="0dp"
@@ -204,6 +210,7 @@
                     android:textColor="@color/black"
                     android:textSize="24sp" />
 
+                <!--% 텍스트-->
                 <TextView
                     android:id="@+id/textView12"
                     android:layout_width="wrap_content"
@@ -215,7 +222,7 @@
                     android:textSize="35sp" />
             </LinearLayout>
 
-            <!-- Healthy Hair -->
+            <!--가로 정렬/위 아래 회색 선-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -224,9 +231,9 @@
                 android:layout_marginEnd="40dp"
                 android:background="@drawable/text_text"
                 android:orientation="horizontal"
-
                 >
 
+                <!--건강모 텍스트-->
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="0dp"
@@ -239,6 +246,7 @@
                     android:textColor="@color/black"
                     android:textSize="24sp" />
 
+                <!--% 텍스트-->
                 <TextView
                     android:id="@+id/textView14"
                     android:layout_width="wrap_content"
@@ -250,6 +258,7 @@
                     android:textSize="35sp" />
             </LinearLayout>
 
+            <!--가로 정렬/위 아래 회색 선-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -259,6 +268,7 @@
                 android:background="@drawable/text_text"
                 android:orientation="horizontal">
 
+                <!--버진 텍스트-->
                 <TextView
                     android:id="@+id/textView15"
                     android:layout_width="0dp"
@@ -271,6 +281,7 @@
                     android:textColor="@color/black"
                     android:textSize="24sp" />
 
+                <!--%텍스트-->
                 <TextView
                     android:id="@+id/textView16"
                     android:layout_width="wrap_content"
@@ -282,6 +293,7 @@
                     android:textSize="35sp" />
             </LinearLayout>
 
+            <!--가로 정렬/위 아래 회색 선-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -291,8 +303,7 @@
                 android:background="@drawable/text_text"
                 android:orientation="horizontal">
 
-                <!-- TextView aligned to the left (default behavior) -->
-
+                <!--텍스트 show hair quality-->
                 <TextView
                     android:id="@+id/textView18"
                     android:layout_width="0dp"
@@ -304,8 +315,9 @@
                     android:text="Show hair quality"
                     android:textColor="@color/black"
                     android:textSize="24sp" />
-                <!-- View aligned to the right -->
-                <View
+
+                <!-- 이미지 넣는 버튼-->
+                 <View
                     android:id="@+id/view"
                     android:layout_width="90dp"
                     android:layout_height="90dp"
@@ -315,6 +327,7 @@
                     android:background="@drawable/back_to_the_future" />
             </LinearLayout>
 
+           <!--가로 정렬/위 아래 회색 선-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -324,6 +337,7 @@
                 android:background="@drawable/friday_the_13th"
                 android:orientation="horizontal">
 
+                <!--체크박스-->
                 <CheckBox
                     android:id="@+id/checkBox"
                     android:layout_width="0dp"
@@ -334,6 +348,7 @@
                     android:text="Show hair quality"
                     android:textSize="24dp" />
 
+                <!--FINSH-->
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
